@@ -1,0 +1,33 @@
+import React, { Component } from 'react';
+import { Route,HashRouter } from "react-router-dom";
+
+//个人中心页面组件
+import Personal from './components/pages/Personal/Personal.jsx';
+//登陆页面
+import Login from './components/pages/Personal/Login.jsx';
+//注册页面
+import Reg from './components/pages/Personal/Reg.jsx';
+
+//FontAwesome字体图标框架
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight,faAngleLeft,faShoppingBag,faMoneyBillWaveAlt,faAddressBook,faCoins,faFileInvoice,faUser,faMobileAlt,faLock } from '@fortawesome/free-solid-svg-icons'
+library.add(faAngleRight,faAngleLeft,faShoppingBag,faMoneyBillWaveAlt,faAddressBook,faCoins,faFileInvoice,faUser,faMobileAlt,faLock)
+
+
+
+class App extends Component {
+  render() {
+    return (
+    	<HashRouter>
+	      	<div className="App">		
+	    		<Route path="/Personal" component={Personal} />
+	    		<Route path="/Login" component={Login} />
+	    		<Route path="/Reg" component={Reg} />
+	        </div>
+        </HashRouter>
+    );
+  }
+}
+
+export default App;
