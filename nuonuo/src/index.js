@@ -5,10 +5,12 @@ import { HashRouter as Router} from "react-router-dom";
 
 // 请求
 import axios from 'axios';
-import './index.css';
+import './styles/index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './libs/serviceWorker';
 React.axios = axios;
+
+
 
 
 ReactDOM.render(
