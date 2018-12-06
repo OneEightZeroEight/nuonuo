@@ -1,18 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	background: #EFEFF4;
+}
 .nav{
 	width: 100%;
 	height:1.162162rem;
-	background: red;
+	text-align: center;
+	position: fixed;
+	top: 0rem;
+	display: flex;
+	line-height: 1.189189rem;
+	justify-content: space-between;
+	background: #FFFFFF;
+	z-index: 9999999999;
+	border-bottom: 0.027027rem solid #CCCCCC;
 }
 .left{
-		font-size:0.48rem;
-		float: left;
+	font-size:0.48rem;
+	padding-left:0.405405rem;
 }
 .center{
 	font-size:0.48rem;
 	display: inline-block;
-	
 }
-.right{
+/*============================================*/
+.main{	
+
+}
+.top{
+	width: 100%;
+	border-bottom: 2px solid #FF9D92;
+}
+.Btop{
+	width: 100%;
+	height: 2.729729rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding-left: 0.54054rem;
+}
+.Btop .tital{
+	color: #030303;
+    font-size: 0.42666rem;
+    line-height: 0.58666rem;
+    text-align: left;
+    padding-top: 5px;
+}
+.Btop .jia .price{
+	color: #FF2D55;
+	height: 25px;
+	display: inline-block;
+	font-size:0.729729rem;
+}
+.Btop .jia .zhi{
+	color: #FF2D55;
+	display: inline-block;
+	font-size: 0.945945rem;
+	height: 25px;
+	font-weight: bolder;
+}
+.Btop .kuaidi{
+	font-size: 0.32rem;
+	color: #9B9B9B;
+	height: 20px;
+}
+.Btop .kuaidi span{
+	padding-left: 10px;
+}
+/*==========================================*/
+.Button{
+	width: 100%;
+	height: 1.243243rem;
+	position: fixed;
+	bottom: 0rem;
+	z-index: 9999;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Bleft{
+	display: inline-block;
 	font-size:0.48rem;
+	width: 1.864864rem;
+    height: 1.216216rem;
+    text-align: center;
+    color: #808185;
+    background: #FFFFFF;
+    
+}
+.text{
+	display: block;
+	height: 0.324324rem;
+    font-size: 0.26666rem;
+}
+.Bleft i{
+	width: 0.648648rem;
+    height: 0.648648rem;
+    position: relative;
+}
+.Bleft .total{
+	position: absolute;
+	top: -1px;
+    left: 0.972972rem;
+    height:0.432432rem;
+	background: red;
+	font-size: 0.324324rem;
+	color: #FFFFFF;
+	border-radius: 30px;
+}
+
+
+
+.Bcenter{
+	background-color: #FE8604;
+    text-align: center;
+    line-height: 1.28rem;
+    font-size: 0.42666rem;
+    color: #FFFFFF;
+    width: 4.135135rem;
+    height: 1.216216rem;
+}
+.Bright{
+	font-size:0.48rem;
+	background-color: #FF3C25;
+	flex: 1;
+    text-align: center;
+    line-height: 1.28rem;
+    font-size: 0.42666rem;
+    color: #FFFFFF;
+    width: 4.135135rem;
+    height: 1.216216rem;
+}
+/*=================================*/
+.g-list{
+	box-sizing: border-box;
+	padding: 0rem 0.405405rem 0.405405rem 0.405405rem;
+	background: #FFFFFF;
+	margin-top: 0.405405rem;
+}
+.g-list ul li div{
+	font-size: 0.432432rem;
+	display: inline-block;
+}
+.g-list ul li{
+	height: 1.216216rem;
+}
+.g-list .l1 .field{
+	color: #9B9B9B;
+	line-height:1.216216rem;
+}
+.g-list .l1 .omit{
+	border-bottom: 0.027027rem solid #DADADD;
+	color: #030303;
+	margin-left: 0.405405rem;
+	padding-bottom: 0.135135rem;
+}
+.g-list .l1 i{
+	line-height: 1.891891rem;
+	font-size: 0.432432rem;
 	float: right;
+	color: #D4D4D4;
+	margin-left: 20px;
+}
+.g-list .l2{
+	line-height:1.216216rem;
+}
+.g-list .l2 .field{
+	color: #9B9B9B;
+}
+.g-list .l2 .omit{
+	color: #9B9B9B;
+	margin-left: 0.405405rem;
+}
+/*=================================*/
+.tuodong{
+    text-align: center;
+    line-height: 1.378378rem;
+    font-size: 0.32rem;
+    color: #494949;
+    background: #f0f0f0;
+    padding-bottom: 2rem;
+}
+.tuodong p{
+	height: 1.405405rem;
+}
+.tuodong .Bnav{
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+}
+.tuodong .Bnav ul{
+	float: left;
+	text-align: center;
+	line-height:1.054054rem;
+}
+.tuodong .Bnav ul a{
+	display: inline-block;
+	width: 5rem;
+	height: 1.054054rem;
+	text-align: center;
+	color: #474747;
+	line-height: 1.054054rem;
+}
+/*================tab================*/
+.jieshao{
+	height: 50rem;
+	background: red;
+	width: 10.135135rem;
 }
