@@ -3,6 +3,11 @@
 @import url('./Personal/login.css');
 @import url('./Personal/reg.css');
 
+/*==================================================*/
+/*详情页css*/
+@import url('./Details/Header.css');
+
+/*==================================================*/
 body {
   margin: 0;
   padding: 0;

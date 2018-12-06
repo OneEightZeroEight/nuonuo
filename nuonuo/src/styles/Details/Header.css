@@ -1,0 +1,18 @@
+.nav{
+	width: 100%;
+	height:1.162162rem;
+	background: red;
+}
+.left{
+		font-size:0.48rem;
+		float: left;
+}
+.center{
+	font-size:0.48rem;
+	display: inline-block;
+	
+}
+.right{
+	font-size:0.48rem;
+	float: right;
+}
