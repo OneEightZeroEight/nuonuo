@@ -1,0 +1,39 @@
+.g-header{
+	width: 100%;
+	height: 45px;
+	background-color: #fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: 0 auto;
+}
+.my-city{
+	display: inline-block;
+	color: #FF3C25;
+    font-size: 14px;
+	line-height: 45px;
+}
+.u-city{
+	  color: #FF3C25;
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 10px;
+}
+.u-city:after {
+    font-family: Muiicons;
+    /* content: '\e581'; */
+    font-size: 16px;
+    color: #4A4A4A;
+}
+.am-search {
+  border-bottom: 1px solid #ddd;
+  width: 300px;
+  float: right;
+}
+/* .sub-title {
+  color: #888;
+  font-size: 14px;
+  padding: 30px 0 18px 0;
+} */

@@ -1,0 +1,78 @@
+.content2{
+	width: 375px;
+	/* height: 220px; */
+}
+.g-title1:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 3px;
+    height: 18px;
+    display: block;
+    background-color: #8854FC;
+}
+.g-title1 {
+    height: 46px;
+    line-height: 46px;
+    color: #030303;
+    padding-left: 10px;
+    position: relative;
+    font-size: 16px;
+    background-color: #F0F0F0;
+}
+.content2 .g-content2{
+	width: 375px;
+    height: 234px;
+	background: #FFFFFF;
+    overflow: hidden;
+    margin: -1px;
+}
+.g-content2 .box{
+	width: 92px;
+    height: 117px;
+    float: left;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    overflow: hidden;
+    text-align: center;
+}
+.g-content2 .box a{
+	text-decoration: none;
+	    color: #007aff;
+}
+.g-content2 .box a img{
+	width: 69px;
+	height: 69px;
+	margin-top: 3px;
+}
+.g-content2 div{
+	width: 93px;
+	height: 35px;
+}
+.g-content2 div .title{
+	margin-top: 0;
+    color: #494949;
+	font-size: 12px;
+	padding-right: 3px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 15px;
+    text-align: left;
+    padding-left: 7px;
+    height: 15px;
+}
+.g-content2 div .prod-price{
+	width: 90px;
+	height: 17px;
+	margin-bottom: 0;
+	margin-top: 0;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 17px;
+	position: relative;
+    color: #FF2D55;
+    margin-left:3px;
+}
