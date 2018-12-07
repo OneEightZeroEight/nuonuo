@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './mianwork.css';
+import { Link } from "react-router-dom";
 class Mianwork extends Component {
     constructor(props){
         super(props);
@@ -38,6 +39,7 @@ class Mianwork extends Component {
 					return this.state.floor.splice(-8).map((item,index)=>{
 						return (
 									<div className="box" key={index}>
+									<Link className="item" to={`/detail/${item.detailid,item.areaid}`}>
 											<a style={{display: 'inline-block',width: '88px'}}>
 												<img src={item.c_image} />
 											</a>
@@ -51,6 +53,7 @@ class Mianwork extends Component {
 													</span>
 												</p>
 											</div>
+											</Link>
 									</div>
 				        )
 				      })

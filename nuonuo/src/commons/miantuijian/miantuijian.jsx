@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-
+import { Link } from "react-router-dom";
 // import { SearchBar } from 'antd-mobile';
 import './miantuijian.css';
 
@@ -44,6 +44,7 @@ class Miantuijian extends Component {
 								   return this.state.floor.splice(0,5).map((item,index)=>{
 										 return (
 												<li key={index} className="mui-control-item">
+												<Link className="item" to={`/detail/${item.detailid,item.areaid}`}>
 														<img src={item.c_image} />
 														<div>
 																<p className="title">{item.c_title}</p>
@@ -55,6 +56,7 @@ class Miantuijian extends Component {
 																	</span>
 																</p>
 														</div>
+														</Link>
 												</li>
 										 )
 									 })

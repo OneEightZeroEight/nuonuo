@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
-import './mianall.css'
-class Mianall extends Component {
+import React from 'react';
+import { Link } from "react-router-dom";
+import './mianall.css';
+class Mianall extends React.Component {
     constructor(props){
         super(props); 
 		this.state = {
 		  floor:[]
 			};
 		}
-	
+	   
+		 componentDidMount(){
+			document.addEventListener('scroll',this.getMianall.bind(this));
+		 }
+
+		 getMianall(){
+			 console.log(document.scrollY);
+		 }
 	getIndexinfo(url){
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange=()=>{
@@ -39,6 +47,7 @@ class Mianall extends Component {
 							return this.state.floor.map((item,index)=>{
 								return (
 					<li key={index}>
+					<Link className="item" to={`/detail/${item.detailid,item.areaid}`}>
 						<div className="m-goodslist-item">
 							<a className="u-goodsimg">
 								<img className="test-lazyload" src={item.img} />
@@ -56,6 +65,7 @@ class Mianall extends Component {
 								<span class="good-addCart"></span>
 							</p>
 						</div>
+						</Link>
 					</li>
 									)
 								})

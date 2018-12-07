@@ -1,12 +1,12 @@
 .footer-bottom-fxied{
 	position: fixed;
     display: flex;
-    flex-flow: row;
     box-sizing: border-box;
     height: 49px;
     bottom: 0;
     left: 0;
     right: 0;
+	top:auto;
     background-color: #FFF;
     z-index: 9999;
     border-top: 1px solid #E5E5E5;

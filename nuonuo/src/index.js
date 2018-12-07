@@ -5,7 +5,7 @@ import { HashRouter as Router} from "react-router-dom";
 
 // 请求
 import axios from 'axios';
-// import './index.css';
+
 //引入swiper
 import  '../node_modules/swiper/dist/js/swiper.js'
 import '../node_modules/swiper/dist/css/swiper.min.css'
