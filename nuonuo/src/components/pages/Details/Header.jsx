@@ -14,7 +14,7 @@ class Dheader extends Component{
 		}
 	}
 	componentWillMount(){
-		console.log(this.props)
+//		console.log(this.props)
 		//发起ajax请求，请求id对应的商品信息
 	}
 

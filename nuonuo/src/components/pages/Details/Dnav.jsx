@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {HashRoute,router,Link,NavLink} from 'react-router-dom';
+import {HashRoute,Router,Route,Link,NavLink,Switch} from 'react-router-dom';
+
 import PropTypes from 'prop-types';
 
 import Jieshao from './Jieshao';
@@ -36,6 +37,10 @@ class Dnav extends Component{
 							>{item.name}</NavLink>
 						})
 					}
+				<Switch>
+					<Route path="/Jieshao" component={Jieshao} />
+		    		<Route path="/Canshu" component={Canshu} />
+				</Switch>
 				</ul>
 			</div>
 		</div>
