@@ -1,0 +1,81 @@
+body{
+	background: #F5F5F5;
+}
+.login header{
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #F0F0F0;
+	font-size: .4rem;
+	line-height: 1.17333rem;
+	height: 1.17333rem;	
+	margin-bottom: 10px;
+	padding:0 20px;
+}
+
+.login header i{
+	color: #808185;
+    font-size: .48rem;
+
+}
+.login header .reg_link{
+	 font-size: .35rem;
+	 color:#FFB72D;
+}
+.login .user_main ul{
+	background: #fff;
+	margin-bottom:10px;
+	font-size: .48rem;
+	padding:0 0 0 20px;
+		
+}
+.login .user_main ul li{
+	height: 1.17333rem;
+	display: flex;
+}
+.login .user_main ul li i{
+	color:#ccc;
+	margin:0 10px 0 0;
+	line-height: 1.17333rem;
+}
+.login .user_main ul li .input_box{
+	border-bottom: 1px solid #F0F0F0;
+	position: relative;
+
+}
+.login .user_main ul li input{
+	border: none;
+	line-height: 1.17333rem;
+	width:320px;
+	padding-left:9px;
+}
+.login .user_main ul li #userCode{
+	border-bottom:none;
+	width:325px;
+}
+.login .user_main ul li span{
+	position: absolute;
+	top:-1px;
+	right:0;
+	display: block;
+	width:100px;
+	height:44px;
+	line-height: 44px;
+	text-align: center;
+	background: #BDBDBD;
+	font-size:.35rem;
+	color:#fff;
+}
+.login .user_main .btn_box{
+	text-align: center;
+}
+.login .user_main .btn_box .login_btn{
+	border:1px solid #BDBDBD;
+	border-radius:5px;
+	background: #BDBDBD;
+	width: 9.28125rem;
+    height: 1.234375rem;
+    
+    font-size: .46875rem;
+    color: #FFF;
+}

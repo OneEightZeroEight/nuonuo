@@ -10,10 +10,12 @@ import axios from 'axios';
 import  '../node_modules/swiper/dist/js/swiper.js'
 import '../node_modules/swiper/dist/css/swiper.min.css'
 
-
+import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './libs/serviceWorker';
 React.axios = axios;
+
+
 
 
 ReactDOM.render(
