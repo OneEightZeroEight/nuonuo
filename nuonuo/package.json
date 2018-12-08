@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-
     "antd-mobile": "^2.2.6",
     "axios": "^0.18.0",
     "express": "^4.16.4",
@@ -25,8 +24,6 @@
     "redux": "^4.0.1",
     "request": "^2.88.0",
     "swiper": "^4.4.2"
-    // "sass": "^1.15.2",
-    // "sass-loader": "^7.1.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -47,6 +44,5 @@
     "babel-plugin-import": "^1.11.0",
     "node-sass": "^4.10.0",
     "react-app-rewired": "^1.6.2"
-    
   }
 }

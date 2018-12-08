@@ -6,7 +6,7 @@ import $qs from "qs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Link } from "react-router-dom";
-
+import Nav from '../../../commons/bottom.jsx'
 import '../../../styles/buyCar/buycar.scss';
 
 
@@ -75,8 +75,11 @@ class buyCar extends React.Component {
 				</li>
 				<li><button>结算</button></li>
 			</div>
-      	</div>		
+			<Nav></Nav>
+      	</div>	
+					
 		)
+		
 	};
 	
 }

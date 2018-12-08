@@ -9,7 +9,8 @@ import Login from './components/pages/Personal/Login.jsx';
 import Reg from './components/pages/Personal/Reg.jsx';
 //购物车页面
 import buyCar from './components/pages/buyCar/buyCar.jsx';
-
+import Home from './Home/Home.jsx';
+import Ceshi from './commons/ceshi.jsx';
 //FontAwesome字体图标框架
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -18,8 +19,7 @@ library.add(faAngleRight,faAngleLeft,faShoppingBag,faMoneyBillWaveAlt,faAddressB
 
 
 
-import Home from './Home/Home.jsx';
-import Ceshi from './commons/ceshi.jsx';
+
 class App extends Component {
   render() {
     return (

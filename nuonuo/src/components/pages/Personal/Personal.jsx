@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Nav from '../../../commons/bottom.jsx'
 import '../../../styles/Personal/my.css';
 
 
@@ -117,9 +117,12 @@ class Personal extends React.Component {
 						</p>
 						</li>
 					</ul>
-				</div>		
+				</div>
+				<Nav/>
 			</div>
+			
 		)
+		
 	};
 	
 }

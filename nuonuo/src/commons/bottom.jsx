@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import '../styles/bottom.css'
 class Nav extends Component {
     constructor(props){
@@ -9,15 +10,15 @@ class Nav extends Component {
 			list:[{
 					title:"商城",
 					imgs:<i className="fa fa-home" aria-hidden="true"></i>,
-					href:""
+					href:"/Home"
 				},{
 					title:"购物车",
 					imgs:<i className="fa fa-shopping-cart" aria-hidden="true"></i>,
-					href:""
+					href:"/buyCar"
 				},{
 					title:"我的",
 					imgs:<i className="fa fa-user" aria-hidden="true"></i>,
-					href:""
+					href:"/Personal"
 				}]
 		}
     }
@@ -34,9 +35,12 @@ class Nav extends Component {
 				(()=>{
 					return this.state.list.map((item,index)=>{
 						return (
+						
 						<div className={index === this.state.nav?"home active":"home"} onClick={this.navigateTo.bind(this,index)} key={index}>
+							<Link to={item.href}>
 							<span>{item.imgs}</span>
 							<p>{item.title}</p>
+						</Link>
 						</div>
 						)
 					})
