@@ -47,22 +47,22 @@ class Mianall extends React.Component {
 							return this.state.floor.map((item,index)=>{
 								return (
 					<li key={index}>
-					<Link className="item" to={`/detail/${item.detailid,item.areaid}`}>
+					<Link className="item" to={`/ceshi/${item.detailid}`}>
 						<div className="m-goodslist-item">
-							<a className="u-goodsimg">
+							<div className="u-goodsimg">
 								<img className="test-lazyload" src={item.img} />
-							</a>
+							</div>
 							<span className="active mui-hidden"></span>
 						</div>
-						<div class="m-mt12">
-							<p class="goostitle">{item.name}</p>
-							<p class="prod-price m-mt15">
-								<span class="yang-pic">¥</span>
-								<span class="yang-pic-price">
-									<span class="big-price">{item.sellprice}</span>
-									<span class="small-price">.00</span>
+						<div className="m-mt12">
+							<p className="goostitle">{item.name}</p>
+							<p className="prod-price m-mt15">
+								<span className="yang-pic">¥</span>
+								<span className="yang-pic-price">
+									<span className="big-price">{item.sellprice}</span>
+									<span className="small-price">.00</span>
 								</span>
-								<span class="good-addCart"></span>
+								<span className="good-addCart"></span>
 							</p>
 						</div>
 						</Link>

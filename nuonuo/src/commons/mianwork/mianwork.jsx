@@ -40,9 +40,9 @@ class Mianwork extends Component {
 						return (
 									<div className="box" key={index}>
 									<Link className="item" to={`/detail/${item.detailid,item.areaid}`}>
-											<a style={{display: 'inline-block',width: '88px'}}>
+											<div style={{display: 'inline-block',width: '88px'}}>
 												<img src={item.c_image} />
-											</a>
+											</div>
 											<div>
 												<p className="title">{item.c_title}</p>
 												<p className="prod-price  ">
