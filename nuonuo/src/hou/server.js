@@ -23,10 +23,12 @@ app.all('*', function (req, res, next) {
 });
 
 // 路由
+//登陆注册
 const userRouter = require('./router/User.js');
 app.use('/User',userRouter);
-
-
+//购物车
+const buyCarRouter = require('./router/buyCar.js');
+app.use('/buyCar',buyCarRouter);
 
 
 
