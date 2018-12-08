@@ -1,12 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import '../../../styles/Personal/my.css';
+
 
 class Personal extends React.Component {
-/*	constructor(){
+	constructor(){
 		super()
-	}*/
+		this.state = {
+			name:""
+		}
+	};
+	componentWillMount(){
+		let userName = document.cookie;
+		userName = userName.split("=")[1];
+		// return userName
+		// console.log(userName)
+		this.setState({
+			name : userName
+		})
+	}
 
 	render() {
 		return (
@@ -16,9 +31,22 @@ class Personal extends React.Component {
 						<img src="https://m.axnsc.com/Contents/images/tou1.png"/>
 					</div>
 					<div className="user-name">
-						<Link to="/Login" className="login">
-							登录/注册
-						</Link>
+					{
+						(()=>{
+							if(typeof(this.state.name) === 'undefined'){
+								return (
+									<Link to="/Login" className="login">
+										登录/注册
+									</Link>	
+								)
+							}else{
+								return(
+									<p>{this.state.name}</p>
+								)
+							}
+						})()
+					}
+											
 					</div>
 				</div>	
 				<div className="g-orderact">

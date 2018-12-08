@@ -7,6 +7,8 @@ import Personal from './components/pages/Personal/Personal.jsx';
 import Login from './components/pages/Personal/Login.jsx';
 //注册页面
 import Reg from './components/pages/Personal/Reg.jsx';
+//购物车页面
+import buyCar from './components/pages/buyCar/buyCar.jsx';
 
 //FontAwesome字体图标框架
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,6 +23,7 @@ class App extends Component {
     return (
     	<HashRouter>
 	      	<div className="App">		
+          <Route path="/buyCar" component={buyCar} />
 	    		<Route path="/Personal" component={Personal} />
 	    		<Route path="/Login" component={Login} />
 	    		<Route path="/Reg" component={Reg} />

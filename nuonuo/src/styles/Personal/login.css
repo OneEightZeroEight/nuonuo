@@ -40,6 +40,7 @@ body{
 }
 .login .user_main ul li .input_box{
 	border-bottom: 1px solid #F0F0F0;
+	position: relative;
 
 }
 .login .user_main ul li input{
@@ -48,9 +49,22 @@ body{
 	width:320px;
 	padding-left:9px;
 }
-.login .user_main ul li #user-code{
+.login .user_main ul li #userCode{
 	border-bottom:none;
 	width:325px;
+}
+.login .user_main ul li span{
+	position: absolute;
+	top:-1px;
+	right:0;
+	display: block;
+	width:100px;
+	height:44px;
+	line-height: 44px;
+	text-align: center;
+	background: #BDBDBD;
+	font-size:.35rem;
+	color:#fff;
 }
 .login .user_main .btn_box{
 	text-align: center;

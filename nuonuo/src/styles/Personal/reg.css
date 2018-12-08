@@ -63,7 +63,7 @@ body{
 .reg .user_main ul li span{
 
 }
-.reg .user_main ul li #user-code{
+.reg .user_main ul li #userCode{
 	border-bottom:none;
 	width:325px;
 }
